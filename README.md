@@ -20,12 +20,12 @@ Scaffolding your single-page applications
 ## ViewModel
 
 * Kendo UI
-* KnockoutJS
 * SammyJS
 
 
 # Future plans
 
-Support Twitter Bootstrap
-Support Wijmo UI
+* Support Twitter Bootstrap
+* Support Wijmo UI
+* Support KnockoutJS
 
