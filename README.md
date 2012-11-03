@@ -1,30 +1,23 @@
 Anvil
 =====
 
-Scaffolding your single-page applications
+## Scaffolding your single-page applications
 
-* Anvil features HTML5, CSS3, and MVVM architecture, utilizing jQuery
-
-## The Model
-
-* JSON provided by server's application stack (doesn't matter which)
+Featuring HTML5, CSS3, MVVM architecture, and jQuery
 
 
-## The View
+## The Scaffold
 
-* Foundation 3
+### Foundation 3
   * Compass + SASS
   * HTML & CSS styleguides
   * Pre-built templates
   * static widgets & UI sugar
 
-
-## ViewModel
-
-* KendoUI
+### KendoUI
   * data visualization widgets
   * dynamic, data-driven widgets
   * MVVM (DOM manipulation)
 
-* SammyJS
+### SammyJS
   * application hashref state routing
