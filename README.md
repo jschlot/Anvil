@@ -1,7 +1,7 @@
 Anvil
 =====
 
-## A complete Front-end stack for your single-page applications
+## My complete Front-end stack for single-page applications development.
 
 Featuring a full-featured tech stack for HTML5, CSS3, JavaScript and NodeJS powered apps
 
