@@ -1,23 +1,21 @@
 Anvil
 =====
 
-## Scaffolding your single-page applications
+## A complete Front-end stack for your single-page applications
 
-Featuring HTML5, CSS3, MVVM architecture, and jQuery
+Featuring a full-featured tech stack for HTML5, CSS3, and JavaScript powered apps
 
+[JS Fiddle](http://jsfiddle.net/c931y1rk/)
 
-## The Scaffold
+## The Stack Features...
 
-### Foundation 3
-  * Compass + SASS
-  * HTML & CSS styleguides
-  * Pre-built templates
-  * static widgets & UI sugar
+### HTML5 + CSS3 Layer
+  * Twitter's Bootstrap
 
-### KendoUI
-  * data visualization widgets
-  * dynamic, data-driven widgets
-  * MVVM (DOM manipulation)
+### Javascript Layer
+  * AngularJS
+  * D3
 
-### SammyJS
-  * application hashref state routing
+### REST Layer
+  * SailsJS
+
