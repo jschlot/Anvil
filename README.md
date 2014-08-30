@@ -5,7 +5,7 @@ Anvil
 
 Featuring a full-featured tech stack for HTML5, CSS3, and JavaScript powered apps
 
-[JS Fiddle](http://jsfiddle.net/c931y1rk/)
+Check out this basic [Seed file](http://jsfiddle.net/c931y1rk/) on JSFiddle.
 
 ## The Stack Features...
 
