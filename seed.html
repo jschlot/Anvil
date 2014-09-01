@@ -3,70 +3,80 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>AngularJS Seed</title>
-  <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js'></script>
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js'></script>
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">Project name</h3>
+    </div>
     <section ng-app="myApp" id="myApp">
-        <div ng-controller="myController">
-            <my-directive message-list="hellos"></my-directive>
-        </div>
-    </section>
-
-<script type='text/javascript'>
-angular
-    .module('myApp', [])
-    .factory('myUtil', [function(){
-        return {
-            sayHello: function() {
-                return "Hello, World!"
-            }
-        };
-    }])
-    .service('myService', [function(){
-        this.sayHello = function() {
-            return "Hello, World!"
-        };
-    }])
-    .directive('myDirective',
-        [ // insertion here
-            function(){
-                function linkingFunction(scope, element, attrs){
-                    
-                }
-                    
-                function controller($scope){
-        
-                    // destroy ////////////////////////////////
-                    $scope.$on("$destroy", function(){
-                    });
-                }
-                controller.$inject = ['$scope'];
+            <div ng-controller="myController">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                    <my-directive message-list="hellos"></my-directive>
+                  </div>
+                </div>
+            </div>
+        </section>
+</div>
+    <script type='text/javascript'>
+        angular
+            .module('myApp', [])
+            .factory('myUtil', [function(){
                 return {
-                    restrict: 'E',
-                    replace: true,
-                    transclude: false,
-                    controller: controller,
-                    scope: {
-                        messageList: "="
-                    },
-                    template: "<ul>"+
-                    "<li ng-repeat='msg in messageList'>{{msg.text}}</li>" + 
-                    "</ul>",
-                    link: linkingFunction
+                    sayHello: function() {
+                        return "Hello, World!"
+                    }
                 };
-            }
-        ]
-    )
-    .controller('myController',
-        ['$scope', 'myUtil', 'myService',
-        function($scope, myUtil, myService){            
-            $scope.hellos = [
-                 { text: myUtil.sayHello() },
-                 { text: myService.sayHello() }
-            ];
-        }]
-    );
-</script>  
+            }])
+            .service('myService', [function(){
+                this.sayHello = function() {
+                    return "Hello, World!"
+                };
+            }])
+            .directive('myDirective',
+                [ // insertion here
+                    function(){
+                        function linkingFunction(scope, element, attrs){
+                            
+                        }
+                            
+                        function controller($scope){
+                
+                            // destroy ////////////////////////////////
+                            $scope.$on("$destroy", function(){
+                            });
+                        }
+                        controller.$inject = ['$scope'];
+                        return {
+                            restrict: 'E',
+                            replace: true,
+                            transclude: false,
+                            controller: controller,
+                            scope: {
+                                messageList: "="
+                            },
+                            template: '<ul class="list-group">'+
+                            '<li class="list-group-item" ng-repeat="msg in messageList">{{msg.text}}</li>' + 
+                            '</ul>',
+                            link: linkingFunction
+                        };
+                    }
+                ]
+            )
+            .controller('myController',
+                ['$scope', 'myUtil', 'myService',
+                function($scope, myUtil, myService){            
+                    $scope.hellos = [
+                         { text: myUtil.sayHello() },
+                         { text: myService.sayHello() }
+                    ];
+                }]
+            )
+        ;
+    </script>  
 </body>
 </html>
