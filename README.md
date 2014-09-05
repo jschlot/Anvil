@@ -2,6 +2,7 @@ Anvil
 =====
 
 ## My quick-start files for spinning up new projects
+[Simplified Version on JSFiddle](http://jsfiddle.net/6adv75sq/)
 
 ###basic-bootstrap-only.html
 A simple Bootstrap page, containing:
