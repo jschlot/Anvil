@@ -8,8 +8,8 @@ Anvil
 A simple Bootstrap page, containing:
 * the reference HTML template that all other templates are based on
 
-###basic-angular.html
-A simple AngularJS module, containing:
+###basic-knockout.html
+A simple KnockoutJS module, containing:
 * an basic viewModel that holds an array that we display in a repeater
 
 ###basic-angular.html
