@@ -4,10 +4,6 @@ Anvil
 ## My quick-start files for spinning up new projects
 [Simplified AngularJS Version on JSFiddle](http://jsfiddle.net/6adv75sq/)
 
-###directives
-Reusable AngularJS directives
-* googleAnalytics - send page views and other events to Google Analytics for Angular SPAs
-
 ###basic-bootstrap-only.html
 A simple Bootstrap page, containing:
 * the reference HTML template that all other templates are based on
