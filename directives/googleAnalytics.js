@@ -20,8 +20,7 @@ EVENT TRACKING (AJAX Request Model)
 angular.module('anvil.googleAnalytics', [])
     .factory('gaTrack', [
         function(){
-            if (!window.ga)
-            { 
+            if (!window.ga) { 
                 // We are returning empty functions for unit testing purposes where
                 // we would never include the google analytics object
                 return {
