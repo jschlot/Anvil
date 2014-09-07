@@ -3,7 +3,9 @@ Google Analytics Tracking
 
 ## Requirements
 * You must have set up Google Analytics >.<
-* Google's tracking code must be loaded before this is executed
+* Google will issue you a analytics token (below shown as UA-##########-1)
+* replace with your analytics token
+* Google's tracking code must be loaded before this is executed, and outside of any controllers
 
 This file usually looks like this:
 
