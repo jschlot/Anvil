@@ -1,3 +1,22 @@
+/*
+Google Analytics Tracking
+
+PAGE VIEW TRACKING // "path" must start with a '/'
+ gaTrack.page(); // uses default location and page title
+ gaTrack.page({path: "/mandalorians", title: "Boba & Jango Fett" });
+
+EVENT TRACKING (Event Delegation Model)
+ gaTrack.event({category: "button", action: "click", label: "export CSV" });
+ gaTrack.event({category: "link", action: "click", label: "Remove" });
+ gaTrack.event({category: "dropdown", action: "selected", label: "contract selected" });
+
+EVENT TRACKING (AJAX Request Model)
+ gaTrack.event({category: "ajax", action: "post", label: "Save Account Data" });
+
+ // 'value' is # of tries (optional)
+ gaTrack.event({category: "ajax", action: "get", label: "Fetch Contract", value: 1 });
+
+*/
 angular.module('anvil.googleAnalytics', [])
     .factory('gaTrack', [
         function(){
