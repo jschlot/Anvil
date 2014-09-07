@@ -25,8 +25,8 @@ angular.module('anvil.googleAnalytics', [])
                 // We are returning empty functions for unit testing purposes where
                 // we would never include the google analytics object
                 return {
-                    page: function() {}
-                    , event: function() {}
+                    page: function() {},
+                    event: function() {}
                 }; 
             }
             var gaTrack = {
